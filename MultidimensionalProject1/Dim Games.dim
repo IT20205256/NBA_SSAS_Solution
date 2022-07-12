@@ -1,0 +1,568 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9bd68f4e-b967-4ff1-96a0-dc137bc25073" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Games</ID>
+  <Name>Dim Games</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1430" scrolltop="-2368" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7324" y="16531" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimGames" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4424" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004811000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimGames" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1430</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2368</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c145adf4-846e-424d-993c-d31b3e4cb29b">
+    <DataSourceViewID>DSV_NBA_DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="366e3db2-1267-42d9-8f30-eccabf54bac6">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="1f4999d5-325c-4ed7-b60d-8db17fa24d0e">
+      <ID>Game SK</ID>
+      <Name>Game SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7a91e552-8530-4494-b723-62229aff3fc3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec7f00ef-7e86-4d76-998b-be0c73dbaf2f">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>GameSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5a96afd2-1a12-4897-8930-d49b92a1fb75">
+          <AttributeID>VISITOR TEAM ID</AttributeID>
+          <Name>VISITOR TEAM ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a695e5c1-9963-4e5a-baf0-610402ad9a1f">
+          <AttributeID>HOME TEAM ID</AttributeID>
+          <Name>HOME TEAM ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="055a57ae-34a7-4c39-a224-00357bc8e020">
+          <AttributeID>GAME DATE EST</AttributeID>
+          <Name>GAME DATE EST</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c9bf35d4-b1f8-4c54-95fd-4ca4301b570c">
+          <AttributeID>Alternate Game ID</AttributeID>
+          <Name>Alternate Game ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fceb6791-af1c-414e-9aaf-c0c133815fe4">
+          <AttributeID>GAME STATUS TEXT</AttributeID>
+          <Name>GAME STATUS TEXT</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ff3b78a8-5522-40c5-833b-41da8eac038a">
+          <AttributeID>SEASON</AttributeID>
+          <Name>SEASON</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5d5db332-221a-43e0-ba6f-5afff78b7f24">
+          <AttributeID>TEAM ID Home</AttributeID>
+          <Name>TEAM ID Home</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a1d33923-e0c3-4494-a5b4-56f7267ade36">
+          <AttributeID>PTS Home</AttributeID>
+          <Name>PTS Home</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cac1b73c-1b02-4019-8b03-ac02a22871ed">
+          <AttributeID>FG PCT Home</AttributeID>
+          <Name>FG PCT Home</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="da68da44-df71-4156-947f-982debd3a77f">
+          <AttributeID>FT PCT Home</AttributeID>
+          <Name>FT PCT Home</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2020c496-53ac-47aa-b8c1-ebcf7d5aa9ed">
+          <AttributeID>FG3 PCT Home</AttributeID>
+          <Name>FG3 PCT Home</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dbcd3260-0875-482b-b6a1-32a35985d72a">
+          <AttributeID>AST Home</AttributeID>
+          <Name>AST Home</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8992d8aa-e836-4411-a0c7-f88fdef41497">
+          <AttributeID>REB Home</AttributeID>
+          <Name>REB Home</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="981648e8-8fcc-44b4-aa06-46c455faf9cc">
+          <AttributeID>TEAM ID Away</AttributeID>
+          <Name>TEAM ID Away</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="98c5db5b-b7de-49eb-913d-bc4de58ec782">
+          <AttributeID>State Province Name</AttributeID>
+          <Name>State Province Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d784f184-651f-4661-bc0f-6b6e0d04af22">
+          <AttributeID>PTS Away</AttributeID>
+          <Name>PTS Away</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="786e52ee-3e5a-46e3-890c-1d0f74f13e69">
+          <AttributeID>FG PCT Away</AttributeID>
+          <Name>FG PCT Away</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fcd2a5a3-d043-4a53-a666-359c77a39d91">
+          <AttributeID>FT PCT Away</AttributeID>
+          <Name>FT PCT Away</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="487a0764-aa68-4445-be88-565612e67c22">
+          <AttributeID>FG3 PCT Away</AttributeID>
+          <Name>FG3 PCT Away</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5ccb11c9-589f-4f1f-8010-4cd00c56be05">
+          <AttributeID>AST Away</AttributeID>
+          <Name>AST Away</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="935d42f7-50a7-4d94-a8d3-497cb3a21533">
+          <AttributeID>REB Away</AttributeID>
+          <Name>REB Away</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8f808af4-b244-4c2f-b8a3-77ee1a067b28">
+          <AttributeID>HOME TEAM WINS</AttributeID>
+          <Name>HOME TEAM WINS</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c531a9f3-641f-49cf-926c-fa5dc1288181">
+      <ID>VISITOR TEAM ID</ID>
+      <Name>VISITOR TEAM ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="891e32c5-dc0d-4ca4-9735-e84aa2d6ae0d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fde15d76-f308-4d9c-99d3-acd627580112">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>VISITOR_TEAM_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8bb424b9-0271-4192-ae78-bf47432cba49">
+      <ID>HOME TEAM ID</ID>
+      <Name>HOME TEAM ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="18d4d3f5-722f-4aea-a550-acc8acb3dc96">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4c37eb8f-6cae-4bfe-9fdc-579b0dd5e0a5">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>HOME_TEAM_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="075cb4a0-a023-40bc-9775-407afcc484ef">
+      <ID>GAME DATE EST</ID>
+      <Name>GAME DATE EST</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="326ebfe1-18d1-48ad-832f-284e136309f3">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0db692bb-0105-4d2a-8a1c-2e17d23ac3a3">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>GAME_DATE_EST</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8881eb99-8c9b-4982-9782-7555c6eb4bca">
+      <ID>Alternate Game ID</ID>
+      <Name>Alternate Game ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c2708968-966c-422f-88c4-aa75dddfe37d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4632f5df-38a5-4e6d-8544-8dfe6c73c83c">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>AlternateGameID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6d1b1659-a5f9-43f3-bde8-edbcbc124d1c">
+      <ID>GAME STATUS TEXT</ID>
+      <Name>GAME STATUS TEXT</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="16366f26-98e2-429c-8c77-963fa8bf2648">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f91374f5-dec6-49f4-b66d-d54d41fdc418">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>GAME_STATUS_TEXT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b8987ddc-c6f1-45e9-80ba-7782935f6012">
+      <ID>SEASON</ID>
+      <Name>SEASON</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3cbe203b-c278-4e2a-932b-2d05c564905e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39e06baa-4f74-48d6-998d-e6f1fb93569a">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>SEASON</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="49bc56dc-7aa9-460e-9faf-2572bbd6bf2a">
+      <ID>TEAM ID Home</ID>
+      <Name>TEAM ID Home</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3082a67b-6919-4891-abd1-be68017644e5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51c8ca5f-feda-4b2e-9570-b640864fdb31">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>TEAM_ID_home</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2909f192-ab62-4dc6-9664-f9130a09720e">
+      <ID>PTS Home</ID>
+      <Name>PTS Home</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1e4add7-e44c-4dba-9564-e2471284a7f4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e55e5a12-fccd-4e3e-8e08-9430527efe06">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>PTS_home</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e98830e9-67d5-457e-b2bf-40e7b348ba6a">
+      <ID>FG PCT Home</ID>
+      <Name>FG PCT Home</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="daa57eca-d436-46b3-9ebd-3326c770d919">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2bee501-e29c-4b44-98df-1cb5aae876cd">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>FG_PCT_home</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ef74061-a0f0-4760-b48c-f7963ad25fb5">
+      <ID>FT PCT Home</ID>
+      <Name>FT PCT Home</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa6ca6d7-3d01-4c7b-a0d4-9c5d5fe3828f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c86d5287-4043-4a7f-bc8c-599426e5a0ce">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>FT_PCT_home</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f8b0ff94-1aab-4292-9544-1989daa91837">
+      <ID>FG3 PCT Home</ID>
+      <Name>FG3 PCT Home</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67a8aee9-e7a6-4452-b6e1-3d9e046bddd6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="26cf14bb-995b-451b-99a7-a89ba005062c">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>FG3_PCT_home</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="898e7091-6ece-4db5-95e7-f8dc6da067d9">
+      <ID>AST Home</ID>
+      <Name>AST Home</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9123e85f-ce28-4fc0-bcfb-8b33de0e479b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d9438c3-663a-47bd-9281-7888ebf73422">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>AST_home</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b9eccf1b-3cf3-4cf6-b194-d460c5977a11">
+      <ID>REB Home</ID>
+      <Name>REB Home</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7a67f81c-277e-473d-a43c-52d5279c5c7a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="442a228c-d0b5-42d1-b3a2-73dde51dbe6e">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>REB_home</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="79e407a9-0e71-41ed-a74d-55ec4c1f5eb2">
+      <ID>TEAM ID Away</ID>
+      <Name>TEAM ID Away</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3a59255a-3d92-44dc-ac14-bc4e3d00287d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="edea07ce-b2da-4dd9-9232-bf8c7ac29441">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>TEAM_ID_away</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1a2f84fc-abad-4641-9be6-c296a77dcbdb">
+      <ID>State Province Name</ID>
+      <Name>State Province Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ca3c16a5-d0f9-495c-87ea-2c72b7325ab8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d113c390-2893-4314-84ea-506d616b0b50">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>StateProvinceName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bcf7537f-febe-4b0d-a29e-6bccdc1596a5">
+      <ID>PTS Away</ID>
+      <Name>PTS Away</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b8c6a46-41a5-4f29-a7bc-eca0a5aceb3e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="18a68f67-d0eb-45b7-9908-30d8868f590d">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>PTS_away</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="db33da4f-d932-4b99-8cdf-a9e0cdc9ddb5">
+      <ID>FG PCT Away</ID>
+      <Name>FG PCT Away</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="703f26c9-d1f6-4c8a-8c8b-dde9bc2927c5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d4b72b1-c428-4482-aaab-0f038c32cea3">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>FG_PCT_away</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="78e231e3-636f-422c-b417-3fdd6d8e4e7d">
+      <ID>FT PCT Away</ID>
+      <Name>FT PCT Away</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b8b6593e-9210-40e5-bc5d-482900d846a7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d702d36e-9f7a-4f61-8bc2-94837688b7d1">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>FT_PCT_away</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="72f22ee3-c00c-453d-aace-f2fcf5bc4c0e">
+      <ID>FG3 PCT Away</ID>
+      <Name>FG3 PCT Away</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="15909ce8-e966-437d-ac07-d970a5e4c406">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e82afa01-da38-4776-90ac-d0e2d5bb1895">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>FG3_PCT_away</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9a4cf61d-25cf-47ac-b684-15be4965e2b8">
+      <ID>AST Away</ID>
+      <Name>AST Away</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2c51e369-7e02-4e2c-a8cf-8d085dca2266">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f87b8470-a444-4874-9cf4-2a3970649fdc">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>AST_away</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e9752ec7-0dbd-4556-8ba2-ac39cd0049af">
+      <ID>REB Away</ID>
+      <Name>REB Away</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="be54ac94-d271-4078-8bc3-2c729242d292">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79ae82e7-2bce-4e29-b86d-f06524e9ec08">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>REB_away</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eca076c2-be05-4bd8-8d99-c3229a0438db">
+      <ID>HOME TEAM WINS</ID>
+      <Name>HOME TEAM WINS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="66330be2-5ba1-43b1-8b8f-a526ce8d9470">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0598a1cf-7d56-4c2c-bd15-945483f002b9">
+            <TableID>dbo_DimGames</TableID>
+            <ColumnID>HOME_TEAM_WINS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="596fa0cc-9907-4c4e-86d2-44c3acfaf3f8">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="f8500396-f6b8-4f5c-9b89-fb2846aff9f8">
+          <ID>SEASON</ID>
+          <Name>SEASON</Name>
+          <SourceAttributeID>SEASON</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2257e5a2-ae70-42e9-bab3-3696b71ddbd8">
+          <ID>State Province Name</ID>
+          <Name>State Province Name</Name>
+          <SourceAttributeID>State Province Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7af66d0c-a225-40a0-9c49-860c8c19ce4a">
+          <ID>Game SK</ID>
+          <Name>Game SK</Name>
+          <SourceAttributeID>Game SK</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

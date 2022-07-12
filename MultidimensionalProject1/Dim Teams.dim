@@ -1,0 +1,407 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="86744b79-362b-457d-8b8b-b59baacb3f9c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Teams</ID>
+  <Name>Dim Teams</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1547" scrolltop="-2368" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7324" y="16531" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTeams" left="-276" top="-169" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4191" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00005f10000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimTeams" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1547</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2368</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-276</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-169</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0ffd670d-5e86-4f38-a564-7cb0de7796fe">
+    <DataSourceViewID>DSV_NBA_DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="af4806d1-beb5-4399-8c5b-adc98dca417b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="f2f1dafc-ac27-4604-a13e-b66452651382">
+      <ID>Team SK</ID>
+      <Name>Team SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c22f90c8-579c-4554-ac88-fb7f998d2233">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="56913f5b-6f2b-4ed9-8c5e-f3e25c34f24f">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>TeamSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="38e0cc9f-d52d-489f-b62b-17695aae3625">
+          <AttributeID>Alternate Team ID</AttributeID>
+          <Name>Alternate Team ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f1654bfd-29c0-4455-a805-5820a0c2e27a">
+          <AttributeID>LEAGUE ID</AttributeID>
+          <Name>LEAGUE ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6d72a66a-97c3-4a8c-bfb3-4f0a6d825cab">
+          <AttributeID>MIN YEAR</AttributeID>
+          <Name>MIN YEAR</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="358b1838-d414-4dd8-90d6-b0d641356f8a">
+          <AttributeID>MAX YEAR</AttributeID>
+          <Name>MAX YEAR</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dda6ab48-b27f-49ac-9f1e-936c6cd7e375">
+          <AttributeID>ABBREVIATION</AttributeID>
+          <Name>ABBREVIATION</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6646c5f2-6c63-406b-b321-a9387f2673c9">
+          <AttributeID>NICKNAME</AttributeID>
+          <Name>NICKNAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="21919818-5dc6-4969-9c89-13702df4c4f9">
+          <AttributeID>YEARFOUNDED</AttributeID>
+          <Name>YEARFOUNDED</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="434f6856-94e0-43bc-95f3-d10e085cdbd8">
+          <AttributeID>CITY</AttributeID>
+          <Name>CITY</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a6be6103-01ff-40d3-a889-94a40b0b9e1d">
+          <AttributeID>ARENA</AttributeID>
+          <Name>ARENA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="74fd7271-197e-4ef5-9365-b124cdfab99a">
+          <AttributeID>ARENACAPACITY</AttributeID>
+          <Name>ARENACAPACITY</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="79ed2582-3a01-40d2-b49e-0d2cef600217">
+          <AttributeID>OWNER</AttributeID>
+          <Name>OWNER</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a9e336c7-c49a-41c3-a3fa-b93c04784397">
+          <AttributeID>GENERALMANAGER</AttributeID>
+          <Name>GENERALMANAGER</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c7a49f06-7871-46ce-8e12-5077f74e312c">
+          <AttributeID>HEADCOACH</AttributeID>
+          <Name>HEADCOACH</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="70deaf82-9f4b-471e-8c8d-36351281f32f">
+          <AttributeID>DLEAGUEAFFILIATION</AttributeID>
+          <Name>DLEAGUEAFFILIATION</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4dd354af-8d85-4d31-887a-18650c3a5b17">
+      <ID>Alternate Team ID</ID>
+      <Name>Alternate Team ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f10ef3fa-b77d-4483-986f-de70bbc5ac42">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b21e7c2-61f9-4666-b6eb-b26b7917fc1e">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>AlternateTeamID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="34b6ce78-77d8-44a2-9fc5-26d11395386b">
+      <ID>LEAGUE ID</ID>
+      <Name>LEAGUE ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0476c29-95aa-42ac-b86b-62c67a792259">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1117c64-365e-4f11-a93d-87b7ca0aa4a5">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>LEAGUE_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8bc45c4c-38ac-42ca-849f-fcc6b8d00d40">
+      <ID>MIN YEAR</ID>
+      <Name>MIN YEAR</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7beb8b58-fdff-4f3f-bc8c-8a700491725d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8829a3b9-ac49-44f7-8cb3-711d158db095">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>MIN_YEAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="03a19fb8-d5df-40c4-873b-d17c1dd9f9a9">
+      <ID>MAX YEAR</ID>
+      <Name>MAX YEAR</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7dfceb7c-3014-4f27-ac7d-0e7565d7a022">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0f2936f-2f7b-4720-b9fd-d40fc6493b8e">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>MAX_YEAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2cc55636-4134-4bdd-aaba-ff41e9507025">
+      <ID>ABBREVIATION</ID>
+      <Name>ABBREVIATION</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="abb309ab-6930-453d-a28c-931b472c093f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="00603653-4afb-4a4f-aa69-64394abb291d">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>ABBREVIATION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0b94ffed-5d85-4b05-a963-f099a149335a">
+      <ID>NICKNAME</ID>
+      <Name>NICKNAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c50809e9-6f6e-4d6f-a332-e42dd27551c0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4509f1df-b818-4a73-8035-b32d683e9762">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>NICKNAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="00f59bb9-d079-4d4f-a71a-a6b6d2991e12">
+      <ID>YEARFOUNDED</ID>
+      <Name>YEARFOUNDED</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f61b7e74-8a83-4782-a49a-23eb22255a12">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6dfbd556-f52f-46d8-9af6-2e2af73d7854">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>YEARFOUNDED</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="42a41c32-903b-46d1-9652-368aa4102d96">
+      <ID>CITY</ID>
+      <Name>CITY</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ae7b6a1-5234-4bb7-a447-3213e945a743">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e44275c-1743-422d-9e77-22727ff386cd">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>CITY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fc45c37e-ac77-4e5d-bf34-eb93bf8f474e">
+      <ID>ARENA</ID>
+      <Name>ARENA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3182f69-1cc1-448f-8cc7-354b102de6f0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="faaa8b5b-e4a7-4d81-af47-7604c956e08e">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>ARENA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b9e8eee0-40ca-45bd-8a4f-6a7b1a372b0b">
+      <ID>ARENACAPACITY</ID>
+      <Name>ARENACAPACITY</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd67b223-7835-402a-929d-9fbcd614e57a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1436948f-cb62-4946-85ae-fd58e8190fd1">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>ARENACAPACITY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6a0f85ba-7f75-41ce-bdd7-541499b3cd75">
+      <ID>OWNER</ID>
+      <Name>OWNER</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0dc8168e-97ff-46da-9760-81c30fe3fa77">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2b1fefb-41e7-4c3d-b305-41c97914a009">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>OWNER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f59bff38-e7ff-40d6-8469-1d5491e38416">
+      <ID>GENERALMANAGER</ID>
+      <Name>GENERALMANAGER</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9483ac9-2efc-4960-a5dc-e21772b11401">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f652d4aa-46fb-4fa2-afdc-82a9babcb0a0">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>GENERALMANAGER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dbeddfa8-940d-45d2-ac61-de2fc343b9aa">
+      <ID>HEADCOACH</ID>
+      <Name>HEADCOACH</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a83c7e3-693c-43e2-8a9c-51130d4a56b5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a5d0d06d-0cb4-4f6e-aa70-7ae62a166458">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>HEADCOACH</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2d7d7198-b13f-47b6-a1e2-16053b258cee">
+      <ID>DLEAGUEAFFILIATION</ID>
+      <Name>DLEAGUEAFFILIATION</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c60c3728-d5af-4c51-a515-7b2a2cc0605f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f7824764-1538-4d64-9047-70606ef0f8ee">
+            <TableID>dbo_DimTeams</TableID>
+            <ColumnID>DLEAGUEAFFILIATION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="a4432fb5-ad56-4e05-a858-fd510ccd413d">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="9854f2eb-68b5-4b8e-acd2-a6162648d303">
+          <ID>CITY</ID>
+          <Name>CITY</Name>
+          <SourceAttributeID>CITY</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="06f27262-1fca-45f3-babb-d2203a3c99a4">
+          <ID>ABBREVIATION</ID>
+          <Name>ABBREVIATION</Name>
+          <SourceAttributeID>ABBREVIATION</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="69618f54-f432-4450-b49c-d302d36e85dd">
+          <ID>ARENA</ID>
+          <Name>ARENA</Name>
+          <SourceAttributeID>ARENA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
